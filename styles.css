@@ -1,0 +1,106 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.glassy {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh; /* Adjust height to fit in the view */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px; /* Minimum height for the text area */
+    max-height: 300px; /* Maximum height to ensure it doesn't grow too large */
+    border-radius: 16px;
+    color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#openLinkButton {
+    background-color: #2196f3;
+    color: white;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#openLinkButton:hover {
+    background-color: #1976d2;
+}
+
+#lastUsedContainer {
+    width: 100%;
+    margin-top: 20px;
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+.collection {
+    padding: 0;
+}
+
+.collection-item {
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection-item a {
+    color: #2196f3;
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+
+.collection-item a:hover {
+    text-decoration: underline;
+}
+
+.copy-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #388e3c;
+}
