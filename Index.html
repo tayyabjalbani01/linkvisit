@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Manager</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-panel glassy">
+            <h5>Link Manager</h5>
+            <div class="input-field">
+                <textarea id="linkInput" class="materialize-textarea" placeholder="Paste your links here, each on a new line"></textarea>
+            </div>
+            <a id="openLinkButton" class="waves-effect waves-light btn-large">Open Next Link</a>
+            <div id="lastUsedContainer">
+                <h6>Last Used Links</h6>
+                <ul id="lastUsedList" class="collection"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
