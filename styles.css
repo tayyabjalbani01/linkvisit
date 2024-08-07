@@ -1,6 +1,6 @@
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -16,16 +16,16 @@ body {
 }
 
 .glassy {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 16px;
     backdrop-filter: blur(10px);
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh; /* Adjust height to fit in the view */
-    overflow: hidden; /* Prevent overflow */
+    height: 90vh;
+    overflow: hidden;
 }
 
 .input-field {
@@ -36,35 +36,42 @@ body {
 
 textarea {
     width: 100%;
-    min-height: 150px; /* Minimum height for the text area */
-    max-height: 300px; /* Maximum height to ensure it doesn't grow too large */
-    border-radius: 16px;
-    color: #e0e0e0;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 10px;
+    min-height: 150px;
+    max-height: 300px;
+    border-radius: 12px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    padding: 12px;
     box-sizing: border-box;
-    overflow-y: auto; /* Add vertical scrollbar when content overflows */
-    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto;
+    resize: vertical;
+    font-size: 16px;
 }
 
 #openLinkButton {
-    background-color: #2196f3;
+    background-color: #007bff;
     color: white;
-    border-radius: 16px;
-    padding: 10px 20px;
+    border-radius: 12px;
+    padding: 12px 24px;
     margin-top: 10px;
     display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #openLinkButton:hover {
-    background-color: #1976d2;
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #lastUsedContainer {
     width: 100%;
     margin-top: 20px;
-    overflow-y: auto; /* Add vertical scrollbar if needed */
+    overflow-y: auto;
 }
 
 .collection {
@@ -72,20 +79,22 @@ textarea {
 }
 
 .collection-item {
-    color: #e0e0e0;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .collection-item a {
-    color: #2196f3;
+    color: #007bff;
     text-decoration: none;
     overflow-wrap: break-word;
+    font-size: 14px;
 }
 
 .collection-item a:hover {
@@ -93,14 +102,18 @@ textarea {
 }
 
 .copy-button {
-    background-color: #4caf50;
+    background-color: #28a745;
     color: white;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border: none;
-    border-radius: 16px;
+    border-radius: 12px;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .copy-button:hover {
-    background-color: #388e3c;
+    background-color: #218838;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
